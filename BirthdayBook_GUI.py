@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 import os
 
-version = "v2"
+version = "v2.1"
 
 Birthday_book = dict()
 date_list = list()
@@ -32,9 +32,8 @@ def add():
             for date in Birthday_book:
                 value = Birthday_book[date]
                 temp = date + ";" + value[0] + ";" + value[1] + \
-                                               ";" + value[2] + ";" + "\n"
+                       ";" + value[2] + ";" + "\n"
                 file.write(temp)
-
 
 
 def select_list_date(event):
